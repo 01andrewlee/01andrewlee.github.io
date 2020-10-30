@@ -42,7 +42,6 @@ const ProductDescription = () => {
             })
             
             console.log(res);
-            if(res.status===404) return <Redirect to={error404Path}/>;
             
         }catch(error){
             alert.show(error.message);
